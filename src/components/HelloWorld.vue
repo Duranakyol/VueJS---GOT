@@ -4,7 +4,7 @@
     <p>
       In diesem Page können Sie viele Infos über die Serie finden.
       <a
-        href="https://cli.vuejs.orghttps://de.wikipedia.org/wiki/Game_of_Thrones"
+        href="https://en.wikipedia.org/wiki/Game_of_Thrones"
         target="_blank"
         rel="noopener"
         >Wikipedia</a

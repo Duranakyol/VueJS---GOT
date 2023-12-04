@@ -41,6 +41,10 @@
         </tbody>
       </table>
 
+      <button type="submit" class="randomButton" @click="refreshPage">
+        RANDOM
+      </button>
+
       <div class="quotesDetails" v-if="selectedQuote !== null">
         <h3>Houses of {{ quotes[selectedQuote].character.name }}</h3>
         <ul>
@@ -69,6 +73,9 @@ export default {
   methods: {
     showHouses(index) {
       this.selectedQuote = index;
+    },
+    refreshPage() {
+      location.reload();
     },
   },
   created: function () {
@@ -99,6 +106,19 @@ input {
 .list {
   margin: 20px;
 }
+
+.randomButton {
+  border: none;
+  background-color: chocolate;
+  color: white;
+  padding: 2px 5px;
+}
+
+.randomButton:hover {
+  cursor: pointer;
+  padding: 3px 6px;
+}
+
 .quotesDetails {
   display: flex;
   flex-direction: column;

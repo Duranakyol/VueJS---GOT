@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Got Logo" src="../assets/home.webp" />
+    <img class="myPhoto" alt="Got Logo" src="../assets/home.webp" />
     <HelloWorld msg="Welcome to Game Of Thrones Page" />
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-img {
+.myPhoto {
   display: block;
   margin: 2rem auto;
   width: 60%;
